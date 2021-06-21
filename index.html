@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>project</title>
+	<link rel="stylesheet" href="./css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<div class="wrapper">
+	<div class="blot"></div>
+<div class="menu">
+	<div class="menu_body container">
+		<div class="header__burger">
+			<span></span>
+		</div>
+		<div class="menu__nav"></div>
+		<div class="menu_columns">
+			<div class="menu_column">
+				<ul class="menu__list" data-da=".menu__nav, 768, 1">
+					<li>
+						<a href="#home" class="menu__link _slow_scroll">Про нас</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="menu__link _slow_scroll">Портфоліо</a>
+					</li>		
+				</ul>	
+			</div>
+				
+			<div class="menu_column">
+				<div class="menu__logo">
+					<div class="menu__logo_img"><img src="./img/logo.png" alt="logo"></div>											
+				</div>
+			</div>
+
+			<div class="menu_column">
+				<ul class="menu__list"  data-da=".menu__nav, 768, 2">
+					<li>
+						<a href="#order" class="menu__link _slow_scroll">Як замовити?</a>
+					</li>
+					<li>
+						<a href="#contact" class="menu__link _slow_scroll">Зв’язатися</a>
+					</li>		
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="modal_order">
+	<div class="modal_body_order">
+		<div class="cross cross_order"></div>
+		<div class="order_modal_title">ВАША ЗАЯВКА</div>
+		<div class="form">
+			<form action="#" id="form" class="form_body"  enctype="multipart/form-data">
+				<div class="form_item">
+					<label for="formName" class="form_lable"></label>
+					<input type="text" id="formName" name="name"  placeholder="Ім’я" class="form_input _req _text">
+				</div>
+				<div class="form_item">
+					<label for="formName" class="form_lable"></label>
+					<input type="text" id="formTel" name="tel"  placeholder="Телефон" class="form_input _req _text">
+				</div>
+				<div class="form_item">
+					<label for="formMassege" class="form_lable"></label>
+					<textarea name="message" id="formMassege" placeholder="Якою ви бачите свою вивіску?" class="form_input _text _req"></textarea>	
+				</div>	
+				<div class="message" id="message"></div>
+				<button type="submit" class="form_button">Надіслати</button>
+			</form>
+		</div>	
+	</div>
+</div>	
+
+
+<div class="modal_calculate">
+	<div class="modal_body_calculate">
+		<div class="cross cross_calculate"></div>
+		<div class="order_modal_title">РОЗРАХУВАТИ ВАРТІСТЬ</div>
+		<div class="form_item">
+			<label for="width" class="form_lable"></label>
+			<input type="text" id="width" name="width" data-price="10"  placeholder="Ширина, мм" class="form_input calc_input" >
+		</div>
+		<div class="form_item">
+			<label for="height" class="form_lable"></label>
+			<input type="text" id="height" name="height" data-price="20" placeholder="Висота, мм" class="form_input calc_input" >
+		</div>
+		<div class="form_item">
+			<label for="lenght" class="form_lable"></label>
+			<input type="text" id="lenght" name="lenght" data-price="30" placeholder="Довжина неону, м" class="form_input calc_input">
+		</div>
+		<div class="form_item">
+			<label for="quantity" class="form_lable"></label>
+			<input type="text" id="quantity" name="quantity" data-price="100" placeholder="Кількість елементів" class="form_input calc_input" >
+		</div>
+		<div class="cost">
+			<div class="cost_title">Вартість:</div>
+			<div class="cost_vol" id="cost_vol"></div><div class="grn"> ₴</div>
+		</div>
+		<div class="modal_calculate_worning">*вирахована сумма <span>приблизна</span>. Для визначення більш точної вартості, залиште <span>заявку</span> на сайті</div>
+		<button type="submit" class="form_button calculate_btn">РОЗРАХУНОК</button>
+	</div>
+</div>	
+
+
+
+<div class="main" id="home">
+	<div class="main_body container">
+		<div class="main_content">
+			<div class="main_left">
+				<div class="main_title">Створюємо <span>неоновий</span> декор під замовлення</div>
+				<div class="main_text">
+					<p>MALACHITE FACTORY - провідна компанія дизайнер-виробник неонового декору та рекламних вивісок. Ми спеціалізуємося на виготовленні світлодіодних лед неонових предметів інтер’єру, а саме: текстів, логотипів та малюнків на замовлення. </p>
+					<p>
+					Замовляйте у нас свою фантазію, яку ми перетворимо у найякіснішу реальність!
+					</p>
+				</div>
+				<div class="main_btn">
+					<div class="pink_btn pink_btn_price _popup_btn" data-popup="calculate">Розрахувати вартість</div>
+					<div class="pink_btn _popup_btn" data-popup="order">Замовити</div>
+				</div>
+			</div>
+			<div class="main_right">
+				<div class="main_img"><img src="img/header_img.png" alt=""></div>
+			</div>
+		</div>
+		<div class="main_arrow"><img src="img/icon/arrow.png" alt=""></div>
+	</div>
+</div>
+
+
+
+<div class="idea">
+	<div class="idea_body container">
+
+		<div class="idea_left">
+			<div class="idea_main_img"><img src="img/lips.png" alt=""></div>
+			<div class="idea_back_img"><img src="img/wheel.png" alt=""></div>
+		</div>
+		<div class="idea_right">
+			<div class="idea_title">Ідея та дизайн</div>
+			<div class="idea_text">Прийшла в голову дивна ідея? <br /> Не проблема! Ми все втілимо в життя.</div>
+			<div class="idea_list">
+				<div class="idea_list_title">Залишайте заявку в якій укажіть:</div>
+				<ul>
+					<li>Своє ім’я</li>
+					<li>Особистий номер телефону</li>
+					<li>Короткий опис замовлення</li>
+				</ul>
+				<div class="idea_list_discrube">(текст/малюнок, розмір, приклад шрифту, місце розташування)</div>
+				<div class="idea_warning">  *попередньо Ви можете вирахувати приблизну вартість замовлення</div>
+			</div>
+			<div class="idea_btn _popup_btn" data-popup="calculate">Розрахувати вартіть</div>
+		</div>	
+	</div>
+</div>
+
+
+<div class="portfolio" id="portfolio">
+	<div class="portfolio_body">
+		<div class="portfolio_title">portfolio</div>
+		<div class="swiper-container portfolio_slider">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="slide_content">
+						<img src="img/slieder_img.png" alt="">
+							<div class="slide_overlay">
+								<div class="slide_overlay_content">
+									<div class="slide_overlay_content_text">
+										<p>Велике Вам дякую за таку чудову роботу, адже вона просто захоплює подих, і навіть на пошті всі були у захваті!</p>
+										<p>Обов’язково зв’яжуся з Вами ще не раз!</p>
+									</div>
+									<div class="slide_overlay_content_icon"><img src="img/icon/inst.png" alt=""></div>
+									<div class="slide_overlay_content_pricw">2000 ₴ - 3000 ₴</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide_content">
+						<img src="img/slieder_img.png" alt="">
+							<div class="slide_overlay">
+								<div class="slide_overlay_content">
+									<div class="slide_overlay_content_text">
+										<p>Велике Вам дякую за таку чудову роботу, адже вона просто захоплює подих, і навіть на пошті всі були у захваті!</p>
+										<p>Обов’язково зв’яжуся з Вами ще не раз!</p>
+									</div>
+									<div class="slide_overlay_content_icon"><img src="img/icon/inst.png" alt=""></div>
+									<div class="slide_overlay_content_pricw">2000 ₴ - 3000 ₴</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide_content">
+						<img src="img/slieder_img.png" alt="">
+							<div class="slide_overlay">
+								<div class="slide_overlay_content">
+									<div class="slide_overlay_content_text">
+										<p>Велике Вам дякую за таку чудову роботу, адже вона просто захоплює подих, і навіть на пошті всі були у захваті!</p>
+										<p>Обов’язково зв’яжуся з Вами ще не раз!</p>
+									</div>
+									<div class="slide_overlay_content_icon"><img src="img/icon/inst.png" alt=""></div>
+									<div class="slide_overlay_content_pricw">2000 ₴ - 3000 ₴</div>
+								</div>
+							</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="slide_content">
+						<img src="img/slieder_img.png" alt="">
+							<div class="slide_overlay">
+								<div class="slide_overlay_content">
+									<div class="slide_overlay_content_text">
+										<p>Велике Вам дякую за таку чудову роботу, адже вона просто захоплює подих, і навіть на пошті всі були у захваті!</p>
+										<p>Обов’язково зв’яжуся з Вами ще не раз!</p>
+									</div>
+									<div class="slide_overlay_content_icon"><img src="img/icon/inst.png" alt=""></div>
+									<div class="slide_overlay_content_pricw">2000 ₴ - 3000 ₴</div>
+								</div>
+							</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		<div class="portfolio_btn">Бiльше</div>
+	</div>
+</div>
+
+
+<div class="order" id="order">
+	<div class="order_body container">
+		<div class="order_title">Як замовити?
+			<div class="border_for_title"><img src="img/border_bottom_two.png" alt=""></div>
+		</div>
+		<div class="order_cards">
+			<div class="order_card">
+				<div class="order_icon _anim_items _anim_no_hide"><img src="img/tel.png" alt=""></div>
+				<div class="order_card_title  _anim_items _anim_no_hide">Заявка</div> 
+				<div class="order_card_text  _anim_items _anim_no_hide">
+				Натисніть нижче кнопку “Замовити” і введіть усю інформацію, яка потребується для  подальшого зв’язку та виготовлення замовлення.
+			    </div>
+			</div>
+			<div class="order_card">
+				<div class="order_icon _anim_items _anim_no_hide"><img src="img/email.png" alt=""></div>
+				<div class="order_card_title  _anim_items _anim_no_hide">Оплата</div> 
+				<div class="order_card_text  _anim_items _anim_no_hide">
+				Перед початком виготовлення сплачується 50% від вартості виробу. Друга частина суми доплачується перед відправкою або при отриманні товару.
+Оплата здіснюється на картку ПриватБанку.
+			    </div>
+			</div>
+			<div class="order_card">
+				<div class="order_icon _anim_items _anim_no_hide"><img src="img/tool.png" alt=""></div>
+				<div class="order_card_title  _anim_items _anim_no_hide">Виготовлення</div> 
+				<div class="order_card_text  _anim_items _anim_no_hide">Використовуються якісні, перевірені матеріали.
+Будь-який текст, логотип чи малюнок виготовляються від 3 до 7 робочих днів, залежить від складності виробу.
+			    </div>
+			</div>
+			<div class="order_card">
+				<div class="order_icon _anim_items _anim_no_hide"><img src="img/car.png" alt=""></div>
+				<div class="order_card_title  _anim_items _anim_no_hide">Доставка</div> 
+				<div class="order_card_text  _anim_items _anim_no_hide">
+				Коли виріб повністю готовий, він проходить перевірку на працездатність. І тільки після підтвердження якості формується відправка замовнику.
+Доставка здійснюється Новою Поштою.
+			    </div>
+			</div>
+		</div>
+		<div class="order_btn"><div class="pink_btn _popup_btn" data-popup="order">Замовити</div></div>
+	</div>
+</div>
+
+<div class="contact" id="contact">
+	<div class="contact_body container">
+		<div class="contact_title">contact us</div>
+		<div class="contact_items">
+			<div class="contact_item">
+				<div class="contact_item_title">Email</div>
+				<a href="#" class="contact_item_link">
+					<div class="contact_item_link_icon"><img src="img/icon/footer_imail.png" alt=""></div>
+					<div class="contact_item_link_link">info@neon_by_malachite</div>
+				</a>
+			</div>
+			<div class="contact_item">
+				<div class="contact_item_title">Instagram</div>
+				<a href="#" class="contact_item_link">
+					<div class="contact_item_link_icon"><img src="img/icon/footer_inst.png" alt=""></div>
+					<div class="contact_item_link_link">@neon_by_malachite</div>
+				</a>
+			</div>
+			<div class="contact_item">
+				<div class="contact_item_title">Facebook</div>
+				<a href="#" class="contact_item_link">
+					<div class="contact_item_link_icon"><img src="img/icon/footer_f.png" alt=""></div>
+					<div class="contact_item_link_link">neon_by_malachite</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="corpyright">Copyright © 2021 <span>Malachite</span> Factory.</div>
+	<div class="powered">Powered by <span>Vladislav Zhylenko</span> </div>
+</div>
+
+</div>
+	<script src="js/dynamicAdapt.js"></script>
+	<script src="./js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
